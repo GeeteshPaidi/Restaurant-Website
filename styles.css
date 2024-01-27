@@ -8,7 +8,7 @@
 }
 
 body{
-    min-width: 640px;
+    min-width: screen
 }
 nav{
     position: fixed;
@@ -25,9 +25,11 @@ nav{
 }
 
 main{
+
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
+    width: 100vw;
     color: azure;
 }
 
@@ -181,6 +183,31 @@ section{
 }
 
 @media screen and (max-width: 1180px){
+    *{
+        font-size: 0.8rem;
+    }
+    section .content{
+        width: 80%;
+        height: 50%;
+        overflow: hidden;
+    }
+    .content img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .home{
+        background-image: url("pictures/home.jpg");
+        background-size: 100vw 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     .menu-list{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -188,12 +215,14 @@ section{
 
     .menu{
         height: 200vh;
+        width: 100vw;
     }
 
     .categories{
        height: 85vh; 
        margin: 8vh  10px;
     }
+    
 }
 
 .items{
