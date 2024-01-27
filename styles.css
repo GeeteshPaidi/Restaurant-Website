@@ -192,9 +192,12 @@ section{
         overflow: hidden;
     }
     .content img{
-        width: 100%;
-        height: 100%;
+        width: 75%;
+        height: 50%;
         object-fit: cover;
+    }
+    #menu{
+       padding-bottom: 10px;
     }
     
     .home{
