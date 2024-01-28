@@ -186,15 +186,19 @@ section{
     *{
         font-size: 0.8rem;
     }
+    .home{
+        overflow: hidden;
+    }
     section .content{
         width: 90%;
         height: 60%;
         overflow: hidden;
     }
     .content img{
-        width: 75%;
-        height: 50%;
+        width: 100%;
+        height: auto;
         object-fit: cover;
+       
     }
     #menu{
        padding-bottom: 10px;
@@ -211,6 +215,9 @@ section{
         align-items: center;
         justify-content: center;
     }
+    .footer{
+        height: 200vh;
+    }
     .menu-list{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -225,7 +232,16 @@ section{
        height: 85vh; 
        margin: 8vh  10px;
     }
-    
+    .desc{
+        height: 70px;
+    }
+    .about{
+        height: 1000px;
+        width: 100%;
+    }
+    .backtotop{
+        align-items: top;
+    }
 }
 
 .items{
