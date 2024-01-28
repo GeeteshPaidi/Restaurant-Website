@@ -217,7 +217,7 @@ section{
         justify-content: center;
     }
     .footer{
-        height: 200vh;
+        height: 150vh;
     }
     .menu-list{
         display: grid;
