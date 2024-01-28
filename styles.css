@@ -8,7 +8,7 @@
 }
 
 body{
-    min-width: 640px;
+    min-width: screen
 }
 nav{
     position: fixed;
@@ -22,12 +22,15 @@ nav{
     justify-content: space-between;
     background-color: burlywood;
     font-weight: 600;
+    overflow:hidden;
 }
 
 main{
+
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
+    width: 100vw;
     color: azure;
 }
 
@@ -181,6 +184,41 @@ section{
 }
 
 @media screen and (max-width: 1180px){
+    *{
+        font-size: 0.8rem;
+    }
+    .home{
+        overflow: hidden;
+    }
+    section .content{
+        width: 90%;
+        height: 60%;
+        overflow: hidden;
+    }
+    .content img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+       
+    }
+    #menu{
+       padding-bottom: 10px;
+    }
+    
+    .home{
+        background-image: url("pictures/home.jpg");
+        background-size: 100vw 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer{
+        height: 150vh;
+    }
     .menu-list{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -188,11 +226,22 @@ section{
 
     .menu{
         height: 200vh;
+        width: 100vw;
     }
 
     .categories{
        height: 85vh; 
        margin: 8vh  10px;
+    }
+    .desc{
+        height: 70px;
+    }
+    .about{
+        height: 1000px;
+        width: 100%;
+    }
+    .backtotop{
+        align-items: top;
     }
 }
 
