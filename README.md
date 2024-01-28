@@ -9,5 +9,5 @@
    + Changable quantities of orders in the cart
    + Items can also be removed with the specified button
    + Total price updates with respect to quantity and items
-   
+   + Works perfectly fine on mobile phones too
    
